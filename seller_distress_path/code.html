@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TitleCheck | Seller Support</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&amp;family=Libre+Baskerville:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed": "#001c3b",
+                    "tertiary": "#401800",
+                    "background": "#f9f9ff",
+                    "surface-container-low": "#f0f3ff",
+                    "primary-container": "#1e3a5f",
+                    "surface-container-high": "#e2e8f8",
+                    "primary": "#022448",
+                    "error-container": "#ffdad6",
+                    "inverse-on-surface": "#ebf1ff",
+                    "inverse-primary": "#adc8f5",
+                    "on-secondary-fixed-variant": "#3e4757",
+                    "primary-fixed": "#d5e3ff",
+                    "surface": "#f9f9ff",
+                    "on-primary-fixed-variant": "#2d486d",
+                    "on-tertiary-fixed-variant": "#763300",
+                    "surface-container": "#e7eefe",
+                    "on-secondary": "#ffffff",
+                    "surface-bright": "#f9f9ff",
+                    "outline": "#74777f",
+                    "on-secondary-container": "#5a6374",
+                    "on-error": "#ffffff",
+                    "surface-tint": "#455f87",
+                    "tertiary-fixed": "#ffdbca",
+                    "surface-dim": "#d3daea",
+                    "tertiary-container": "#622900",
+                    "error": "#ba1a1a",
+                    "on-primary-container": "#8aa4cf",
+                    "on-background": "#151c27",
+                    "secondary-fixed": "#d9e3f7",
+                    "on-surface": "#151c27",
+                    "inverse-surface": "#2a313d",
+                    "secondary-container": "#d6e0f4",
+                    "surface-container-highest": "#dce2f3",
+                    "on-tertiary": "#ffffff",
+                    "surface-variant": "#dce2f3",
+                    "outline-variant": "#c4c6cf",
+                    "on-surface-variant": "#43474e",
+                    "on-secondary-fixed": "#121c2a",
+                    "on-tertiary-fixed": "#331200",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#ffb68e",
+                    "secondary-fixed-dim": "#bdc7da",
+                    "on-primary": "#ffffff",
+                    "secondary": "#555f70",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-container": "#f6853e",
+                    "primary-fixed-dim": "#adc8f5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"],
+                    "accent": ["Libre Baskerville", "serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#f9f9ff] dark:bg-slate-950">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#022448] dark:text-blue-400" data-icon="home_pin">home_pin</span>
+<h1 class="text-2xl font-semibold text-[#022448] dark:text-blue-100 font-['Newsreader'] tracking-tight">TitleCheck</h1>
+</div>
+<div class="flex items-center gap-6">
+<nav class="hidden md:flex items-center gap-8 text-slate-500 dark:text-slate-400 text-sm font-medium">
+<a class="hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors px-3 py-1 rounded-lg" href="#">Home</a>
+<a class="hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors px-3 py-1 rounded-lg" href="#">Search</a>
+<a class="text-[#022448] dark:text-blue-400 font-bold underline decoration-2 underline-offset-8" href="#">Reports</a>
+<a class="hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors px-3 py-1 rounded-lg" href="#">Learning</a>
+</nav>
+<span class="material-symbols-outlined text-[#022448] dark:text-blue-400 scale-95 active:opacity-80 transition-all duration-200 cursor-pointer" data-icon="account_circle">account_circle</span>
+</div>
+</div>
+</header>
+<main class="pt-28 pb-32 px-6 max-w-6xl mx-auto">
+<!-- Hero Section -->
+<section class="text-center mb-16 space-y-4">
+<h2 class="font-accent text-4xl md:text-5xl text-primary leading-tight">Dealing with title complications?</h2>
+<p class="text-lg text-secondary max-w-2xl mx-auto font-body leading-relaxed">
+                You're not alone. We've helped thousands of sellers understand their options and navigate official property records with confidence.
+            </p>
+</section>
+<!-- Main Context: Situation Selector -->
+<div class="space-y-8">
+<div class="flex items-center justify-between">
+<h3 class="font-headline text-2xl text-primary">Identify Your Situation</h3>
+<span class="text-xs font-label uppercase tracking-[0.1em] text-outline px-3 py-1 bg-surface-container rounded-full">Step 1 of 3</span>
+</div>
+<!-- Bento-style Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Large Featured Card: Pre-foreclosure -->
+<button class="md:col-span-2 group relative overflow-hidden bg-surface-container-lowest rounded-xl p-8 text-left transition-all duration-200 hover:shadow-xl hover:translate-y-[-4px] ring-1 ring-outline-variant/20">
+<div class="flex flex-col h-full justify-between gap-12">
+<div class="space-y-4">
+<div class="w-12 h-12 rounded-lg bg-error-container/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-error" data-icon="warning" style="font-variation-settings: 'FILL' 1;">warning</span>
+</div>
+<h4 class="text-2xl font-headline text-primary">Pre-foreclosure</h4>
+<p class="text-secondary max-w-md">Immediate intelligence for properties facing legal notices or pending auctions. Understand the timeline and lien priority.</p>
+</div>
+<span class="flex items-center gap-2 text-primary font-semibold text-sm">
+                            View focused guidance <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</span>
+</div>
+<!-- Decorative background element -->
+<div class="absolute -right-4 -bottom-4 opacity-5">
+<span class="material-symbols-outlined text-[120px]" data-icon="gavel">gavel</span>
+</div>
+</button>
+<!-- Small Card: Tax Liens -->
+<button class="group bg-surface-container-low rounded-xl p-6 text-left transition-all duration-200 hover:bg-surface-container-highest ring-1 ring-outline-variant/10">
+<div class="space-y-4">
+<div class="w-10 h-10 rounded-lg bg-primary-container/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="account_balance">account_balance</span>
+</div>
+<h4 class="text-xl font-headline text-primary">Tax liens</h4>
+<p class="text-sm text-secondary">Resolve municipal debt roadblocks before they freeze your transaction.</p>
+</div>
+</button>
+<!-- Small Card: Probate -->
+<button class="group bg-surface-container-low rounded-xl p-6 text-left transition-all duration-200 hover:bg-surface-container-highest ring-1 ring-outline-variant/10">
+<div class="space-y-4">
+<div class="w-10 h-10 rounded-lg bg-primary-container/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="family_history">family_history</span>
+</div>
+<h4 class="text-xl font-headline text-primary">Probate</h4>
+<p class="text-sm text-secondary">Navigating ownership transfer after a loss. Verify heirs and legal standing.</p>
+</div>
+</button>
+<!-- Small Card: Divorce -->
+<button class="group bg-surface-container-low rounded-xl p-6 text-left transition-all duration-200 hover:bg-surface-container-highest ring-1 ring-outline-variant/10">
+<div class="space-y-4">
+<div class="w-10 h-10 rounded-lg bg-primary-container/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="content_cut">content_cut</span>
+</div>
+<h4 class="text-xl font-headline text-primary">Divorce</h4>
+<p class="text-sm text-secondary">Splitting assets with clarity. Determine quitclaim needs and joint tenancy status.</p>
+</div>
+</button>
+<!-- Small Card: Unknown ownership -->
+<button class="group bg-surface-container-low rounded-xl p-6 text-left transition-all duration-200 hover:bg-surface-container-highest ring-1 ring-outline-variant/10">
+<div class="space-y-4">
+<div class="w-10 h-10 rounded-lg bg-primary-container/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="help_center">help_center</span>
+</div>
+<h4 class="text-xl font-headline text-primary">Unknown ownership</h4>
+<p class="text-sm text-secondary">Uncovering hidden clouds on title or unrecorded deeds from decades past.</p>
+</div>
+</button>
+</div>
+</div>
+<!-- Featured Resource Section -->
+<section class="mt-24 p-1 rounded-2xl bg-gradient-to-b from-surface-container-high to-surface">
+<div class="bg-surface-container-lowest rounded-[calc(1rem-4px)] p-10 flex flex-col md:flex-row items-center gap-12">
+<div class="w-full md:w-1/2">
+<img alt="Official looking document on a desk" class="rounded-lg shadow-lg w-full h-64 object-cover" data-alt="Close-up of high-quality legal paper on a dark wood desk with a fountain pen and soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8JMgMTRHLpIx0e4XqiFszvf_CFY-XiJFTBAVSR23nMY0YxVKIxgbfjHKRVeblB69n7lZybFJngMF4iVdSZ9DJKMFi3kFsUo5W1P0uKttVfUEizfA9J4XUYKpqDL6IuMguOEfzcFbobIzUOP7C0-RfISEyGtJcrRbHH-j3hKzzVHlBtvE3xwVzEw0RsBALFgWQr7aycyFAvJWPJHJw6TrfKlSiEoPyrtgGkZbS3amLr7EZwLL5Md9f3kJP-rv-UhbqR3PWSgD0akS8"/>
+</div>
+<div class="w-full md:w-1/2 space-y-6">
+<span class="text-[10px] font-bold uppercase tracking-widest text-primary-container">Knowledge Base</span>
+<h3 class="text-3xl font-headline text-primary">The Seller's Guide to Quiet Title Actions</h3>
+<p class="text-secondary leading-relaxed">Not every title issue is a dead end. Learn how "Quiet Title" actions can clear the way for a clean sale, even in complex probate or tax lien scenarios.</p>
+<button class="px-6 py-3 bg-primary text-on-primary font-medium rounded-lg hover:opacity-90 transition-all flex items-center gap-2">
+                        Read Official Guide
+                        <span class="material-symbols-outlined text-sm" data-icon="open_in_new">open_in_new</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-6 mt-auto bg-[#f9f9ff] dark:bg-slate-950 border-t border-slate-200/50 dark:border-slate-800/50">
+<div class="flex flex-col items-center text-center space-y-4 max-w-4xl mx-auto">
+<div class="flex gap-6 text-slate-400 dark:text-slate-600 text-xs font-['Inter'] leading-relaxed">
+<a class="hover:text-[#022448] dark:hover:text-blue-400 transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-[#022448] dark:hover:text-blue-400 transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-[#022448] dark:hover:text-blue-400 transition-colors" href="#">Disclosures</a>
+</div>
+<p class="text-slate-400 dark:text-slate-600 text-xs font-['Inter']">© 2024 TitleCheck Intelligence. Official Record Information Only.</p>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-[0_-4px_24px_rgba(0,0,0,0.04)] z-50">
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 hover:text-[#1e3a5f] dark:hover:text-blue-200" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="text-[11px] font-medium font-['Inter'] uppercase tracking-wider mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 hover:text-[#1e3a5f] dark:hover:text-blue-200" href="#">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+<span class="text-[11px] font-medium font-['Inter'] uppercase tracking-wider mt-1">Search</span>
+</a>
+<!-- Reports is Active -->
+<a class="flex flex-col items-center justify-center text-[#022448] dark:text-blue-300 font-bold bg-[#e7eefe] dark:bg-blue-900/30 rounded-xl px-3 py-1 translateY-[-2px] transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="description" style="font-variation-settings: 'FILL' 1;">description</span>
+<span class="text-[11px] font-medium font-['Inter'] uppercase tracking-wider mt-1">Reports</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 hover:text-[#1e3a5f] dark:hover:text-blue-200" href="#">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+<span class="text-[11px] font-medium font-['Inter'] uppercase tracking-wider mt-1">Learning</span>
+</a>
+</nav>
+</body></html>

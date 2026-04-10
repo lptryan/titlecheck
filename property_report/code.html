@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@300;400;500;600;700&amp;family=Libre+Baskerville:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed": "#001c3b",
+                    "tertiary": "#401800",
+                    "background": "#f9f9ff",
+                    "surface-container-low": "#f0f3ff",
+                    "primary-container": "#1e3a5f",
+                    "surface-container-high": "#e2e8f8",
+                    "primary": "#022448",
+                    "error-container": "#ffdad6",
+                    "inverse-on-surface": "#ebf1ff",
+                    "inverse-primary": "#adc8f5",
+                    "on-secondary-fixed-variant": "#3e4757",
+                    "primary-fixed": "#d5e3ff",
+                    "surface": "#f9f9ff",
+                    "on-primary-fixed-variant": "#2d486d",
+                    "on-tertiary-fixed-variant": "#763300",
+                    "surface-container": "#e7eefe",
+                    "on-secondary": "#ffffff",
+                    "surface-bright": "#f9f9ff",
+                    "outline": "#74777f",
+                    "on-secondary-container": "#5a6374",
+                    "on-error": "#ffffff",
+                    "surface-tint": "#455f87",
+                    "tertiary-fixed": "#ffdbca",
+                    "surface-dim": "#d3daea",
+                    "tertiary-container": "#622900",
+                    "error": "#ba1a1a",
+                    "on-primary-container": "#8aa4cf",
+                    "on-background": "#151c27",
+                    "secondary-fixed": "#d9e3f7",
+                    "on-surface": "#151c27",
+                    "inverse-surface": "#2a313d",
+                    "secondary-container": "#d6e0f4",
+                    "surface-container-highest": "#dce2f3",
+                    "on-tertiary": "#ffffff",
+                    "surface-variant": "#dce2f3",
+                    "outline-variant": "#c4c6cf",
+                    "on-surface-variant": "#43474e",
+                    "on-secondary-fixed": "#121c2a",
+                    "on-tertiary-fixed": "#331200",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#ffb68e",
+                    "secondary-fixed-dim": "#bdc7da",
+                    "on-primary": "#ffffff",
+                    "secondary": "#555f70",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-container": "#f6853e",
+                    "primary-fixed-dim": "#adc8f5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"],
+                    "serif-accent": ["Libre Baskerville", "serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .scrolling-touch { -webkit-overflow-scrolling: touch; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body selection:bg-primary-fixed-dim">
+<!-- Top Navigation Anchor -->
+<header class="fixed top-0 w-full z-50 bg-[#f9f9ff] dark:bg-slate-950">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#022448] dark:text-blue-400" data-icon="home_pin">home_pin</span>
+<span class="text-2xl font-semibold text-[#022448] dark:text-blue-100 font-['Newsreader'] tracking-tight">TitleCheck</span>
+</div>
+<div class="flex items-center gap-3">
+<button class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined text-slate-500" data-icon="ios_share">ios_share</span>
+</button>
+<button class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined text-slate-500" data-icon="account_circle">account_circle</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="pt-20 pb-32 px-4 max-w-lg mx-auto">
+<!-- Sticky Header Context -->
+<section class="mb-8">
+<h1 class="font-serif-accent text-3xl font-bold text-primary-container leading-tight">
+                2148 Oakhaven Drive, Los Angeles, CA 90068
+            </h1>
+<div class="mt-3 flex items-center justify-between">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm" data-icon="update">update</span>
+<p class="text-xs font-label uppercase tracking-wider">Last updated: Oct 24, 2024</p>
+</div>
+<div class="flex gap-2">
+<button class="flex items-center gap-1 px-3 py-1.5 bg-surface-container-low rounded-lg text-primary text-xs font-semibold hover:bg-surface-container transition-all">
+<span class="material-symbols-outlined text-sm" data-icon="download">download</span>
+                        Export
+                    </button>
+</div>
+</div>
+</section>
+<!-- Card 1: Title Health Score (Bento Highlight) -->
+<div class="bg-surface-container-lowest rounded-xl p-6 mb-4 shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-outline-variant/10">
+<div class="flex flex-col items-center text-center">
+<div class="relative mb-4">
+<span class="material-symbols-outlined text-7xl text-[#b45309]" data-icon="shield" style="font-variation-settings: 'FILL' 1;">shield</span>
+<div class="absolute inset-0 flex items-center justify-center pt-2">
+<span class="material-symbols-outlined text-white text-2xl" data-icon="warning">warning</span>
+</div>
+</div>
+<span class="px-4 py-1 bg-[#b45309]/10 text-[#b45309] rounded-full text-xs font-bold tracking-widest mb-3 uppercase">Caution</span>
+<h2 class="font-headline text-2xl text-on-surface mb-2">Title Health Investigation</h2>
+<p class="text-on-surface-variant leading-relaxed">Some items require investigation. This property has 1 outstanding involuntary lien detected in official records.</p>
+</div>
+</div>
+<!-- Card 2: Ownership Info -->
+<div class="bg-surface-container-low rounded-xl p-5 mb-4">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary" data-icon="person_search">person_search</span>
+<h3 class="font-bold text-primary tracking-tight">Ownership Information</h3>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between items-end border-b border-outline-variant/20 pb-2">
+<div>
+<p class="text-[10px] text-on-surface-variant font-label uppercase tracking-widest">Current Owner</p>
+<p class="font-medium text-on-surface">Evelyn S. Montgomery</p>
+</div>
+<span class="material-symbols-outlined text-emerald-600 text-sm" data-icon="verified">verified</span>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<p class="text-[10px] text-on-surface-variant font-label uppercase tracking-widest">Last Sale Date</p>
+<p class="font-medium text-on-surface">Mar 12, 2018</p>
+</div>
+<div>
+<p class="text-[10px] text-on-surface-variant font-label uppercase tracking-widest">Deed Type</p>
+<p class="font-medium text-on-surface">Grant Deed</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 3: Liens & Encumbrances -->
+<div class="bg-surface-container-low rounded-xl p-5 mb-4 border-l-4 border-[#b45309]">
+<div class="flex justify-between items-center mb-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#b45309]" data-icon="gavel">gavel</span>
+<h3 class="font-bold text-primary tracking-tight">Liens &amp; Encumbrances</h3>
+</div>
+<span class="px-2 py-0.5 bg-[#b45309]/10 text-[#b45309] text-[10px] font-bold rounded">1 LIEN FOUND</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-lg border border-[#b45309]/20">
+<div class="flex justify-between items-start mb-2">
+<p class="font-bold text-sm text-on-surface">Tax Lien (Federal)</p>
+<p class="font-bold text-error text-sm">$14,205.12</p>
+</div>
+<div class="flex items-center gap-4 text-xs text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]" data-icon="calendar_today">calendar_today</span>
+                        June 08, 2023
+                    </div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]" data-icon="receipt_long">receipt_long</span>
+                        Doc #88219-B
+                    </div>
+</div>
+</div>
+</div>
+<!-- Card 4: Foreclosure Status -->
+<div class="bg-surface-container-low rounded-xl p-5 mb-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-emerald-600" data-icon="event_available">event_available</span>
+<h3 class="font-bold text-primary tracking-tight">Foreclosure Status</h3>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1 bg-emerald-600/10 rounded-full">
+<div class="w-1.5 h-1.5 bg-emerald-600 rounded-full"></div>
+<span class="text-emerald-700 text-xs font-bold">Clear</span>
+</div>
+</div>
+<p class="mt-2 text-sm text-on-surface-variant">No active Notice of Default or Lis Pendens filed.</p>
+</div>
+<!-- Card 5: Implications -->
+<div class="bg-surface-container-highest/30 rounded-xl p-6 mb-4">
+<h3 class="font-headline text-xl text-primary mb-4">What This Means for You</h3>
+<ul class="space-y-4">
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-primary text-lg mt-0.5" data-icon="label_important">label_important</span>
+<p class="text-sm text-on-surface leading-relaxed">The <span class="font-bold">Federal Tax Lien</span> must be cleared before a clean title can be transferred to a new buyer.</p>
+</li>
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-primary text-lg mt-0.5" data-icon="label_important">label_important</span>
+<p class="text-sm text-on-surface leading-relaxed">Traditional lenders may require proof of settlement before approving a new mortgage for this property.</p>
+</li>
+</ul>
+</div>
+<!-- Card 6: Options/CTA -->
+<div class="space-y-3">
+<button class="w-full py-4 bg-gradient-to-b from-primary-container to-primary text-white rounded-lg font-bold flex items-center justify-center gap-3 shadow-lg active:scale-95 transition-all">
+<span class="material-symbols-outlined" data-icon="support_agent">support_agent</span>
+                Speak with a Title Attorney
+            </button>
+<button class="w-full py-4 bg-surface-container-lowest border border-outline-variant/50 text-primary rounded-lg font-bold flex items-center justify-center gap-3 hover:bg-surface-container-low transition-all">
+<span class="material-symbols-outlined" data-icon="handshake">handshake</span>
+                Match with a Specialist Agent
+            </button>
+</div>
+</main>
+<!-- Footer Utility Shell -->
+<footer class="w-full py-12 px-6 mt-auto bg-[#f9f9ff] dark:bg-slate-950 border-t border-slate-200/50 dark:border-slate-800/50">
+<div class="flex flex-col items-center text-center space-y-4 max-w-4xl mx-auto">
+<p class="text-xs font-['Inter'] leading-relaxed text-slate-400 dark:text-slate-600">
+                © 2024 TitleCheck Intelligence. Official Record Information Only. This report is for informational purposes and does not constitute a legal title insurance policy.
+            </p>
+<div class="flex gap-6">
+<a class="text-xs font-medium text-slate-400 hover:text-[#022448] transition-colors underline decoration-slate-200 underline-offset-4" href="#">Privacy Policy</a>
+<a class="text-xs font-medium text-slate-400 hover:text-[#022448] transition-colors underline decoration-slate-200 underline-offset-4" href="#">Terms of Service</a>
+<a class="text-xs font-medium text-slate-400 hover:text-[#022448] transition-colors underline decoration-slate-200 underline-offset-4" href="#">Disclosures</a>
+</div>
+</div>
+</footer>
+<!-- Global Navigation Shell (Mobile) -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-[0_-4px_24px_rgba(0,0,0,0.04)] z-50 md:hidden border-t border-slate-200/20">
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="text-[11px] font-medium font-['Inter'] uppercase tracking-wider mt-1">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+<span class="text-[11px] font-medium font-['Inter'] uppercase tracking-wider mt-1">Search</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#022448] dark:text-blue-300 font-bold bg-[#e7eefe] dark:bg-blue-900/30 rounded-xl px-4 py-1.5 active:translate-y-[-2px] transition-transform duration-200">
+<span class="material-symbols-outlined" data-icon="description" style="font-variation-settings: 'FILL' 1;">description</span>
+<span class="text-[11px] font-medium font-['Inter'] uppercase tracking-wider mt-1">Reports</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+<span class="text-[11px] font-medium font-['Inter'] uppercase tracking-wider mt-1">Learning</span>
+</div>
+</nav>
+</body></html>
